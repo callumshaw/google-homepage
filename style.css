@@ -1,0 +1,196 @@
+
+body {
+ font-family: sans-serif;
+ }
+
+ #outerwrapper {
+   width: 1080px;
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+div#wrapper {
+  text-align:center;
+  padding-top: 150px;
+  clear: both;
+  position: relative;
+/*  top: 50%;
+  transform: translateY(50%);*/
+}
+
+div#image {
+  display: block;
+}
+
+div#search {
+  /*display: block;
+  width: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;*/
+  display: inline-block;
+}
+
+input[type="search"]{
+  border-radius: 0;
+  background-color: white;
+  display: block;
+  border: 1px solid grey;
+}
+
+input[type="submit"]{
+  border-radius: 0;
+  color: #664C4C;
+  background-color: #F3F3F3;
+  font-size: 1.5em;
+  font: inherit;
+  box-shadow: none;
+  border: 1px solid grey;
+
+}
+
+input[type="submit"]:hover{
+  border: 0px;
+  border: 1px solid black;
+  box-shadow: 2px 2px 2px 2px grey;
+}
+
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
+}
+
+#navbar li a {
+  display: block;
+  width: 100px;
+  float: right;
+  margin-left: 10px;
+  font-weight: bold;
+
+
+}
+
+#navbar #signin {
+  background-color: #4486F8;
+  border-radius: 2px;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+
+}
+
+#navbar #signin:hover {
+  box-shadow: 2px 2px 2px 2px grey;
+}
+
+#navbar .link:hover {
+  box-shadow: 2px 2px 2px 2px grey;
+}
+
+#navbar .link {
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+}
+
+
+#langbar {
+  color: grey;
+  padding-left: 275px;
+
+}
+
+/*#langbar a:hover {
+  text-decoration: none;
+}
+
+#langbar a:link {
+  color: darkgrey;
+}
+
+#langbar a:visited {
+  color: darkgrey;
+}*/
+
+/*#langbar p {
+  width: 130px;
+  margin: 0 auto;
+}*/
+
+
+#langbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 500px;
+  margin: 0 auto;
+}
+
+
+#langbar li a {
+  width: 100px;
+  float: left;
+  font-weight: bold;
+  font-size: 0.5em;
+}
+
+.footerwrapper {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 50px;
+  background: #F2F2F2;
+}
+
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  overflow: visible;
+  width: 100%;
+  height: 50px;
+}
+
+.footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer ul li {
+    float: left;
+    margin: 30px;
+}
+
+/*nav #footbar {
+  display: flex;
+  flex-direction: row;
+}*/
+
+#left {
+  box-sizing: border-box;
+  width: 35%;
+  float: left;
+}
+
+#right {
+  box-sizing: border-box;
+  width: 30%;
+  float: right;
+}
+
+.footer a:hover {
+  text-decoration: none;
+}
+
+.footer a:link {
+  color: grey;
+}
+
+.footer a:visited {
+  color: grey;
+}
