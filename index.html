@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Search...</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+<style>
+
+body {
+ font-family: Courier;
+ }
+
+ #outerwrapper {
+   width: 1080px;
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+div#wrapper {
+  text-align:center;
+  padding-top: 150px;
+  clear: both;
+  position: relative;
+/*  top: 50%;
+  transform: translateY(50%);*/
+}
+
+div#image {
+  display: block;
+}
+
+div#search {
+  /*display: block;
+  width: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;*/
+  display: inline-block;
+}
+
+input[type="search"]{
+  border-radius: 0;
+  background-color: white;
+  display: block;
+  box-shadow: 3px 3px 3px 3px grey;
+}
+
+input[type="submit"]{
+  border-radius: 0;
+  background-color: white;
+  font-size: 1.5em;
+  font: inherit;
+}
+
+input[type="submit"]:hover{
+  border: 0px;
+  border: 1px solid black;
+  box-shadow: 2px 2px 2px 2px grey;
+}
+
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
+}
+
+#navbar li a {
+  display: block;
+  width: 100px;
+  float: right;
+  margin-left: 10px;
+  font-weight: bold;
+
+
+}
+
+#navbar #signin {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  border: 1px solid black;
+
+}
+
+#navbar #signin:hover {
+  box-shadow: 2px 2px 2px 2px grey;
+}
+
+#navbar .link:hover {
+  box-shadow: 2px 2px 2px 2px grey;
+}
+
+#navbar .link {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+
+#langbar {
+  font-family: Courier;
+  color: grey;
+}
+
+#langbar a:hover {
+  text-decoration: none;
+}
+
+#langbar a:link {
+  color: darkgrey;
+}
+
+#langbar a:visited {
+  color: darkgrey;
+}
+
+#langbar p {
+  width: 130px;
+  margin: 0 auto;
+}
+
+
+#langbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  margin: 0 auto;
+}
+
+
+#langbar li a {
+  width: 100px;
+  float: left;
+  font-weight: bold;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  overflow: auto;
+  width: 1080px;
+}
+
+.footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer ul li {
+    float: left;
+    margin: 30px;
+}
+
+/*nav #footbar {
+  display: flex;
+  flex-direction: row;
+}*/
+
+#left {
+  box-sizing: border-box;
+  width: 50%;
+  float: left;
+}
+
+#right {
+  box-sizing: border-box;
+  width: 40%;
+  float: right;
+}
+
+.footer a:hover {
+  text-decoration: none;
+}
+
+.footer a:link {
+  color: grey;
+}
+
+.footer a:visited {
+  color: grey;
+}
+
+
+</style>
+
+<div id="outerwrapper">
+
+
+<div id=navbar>
+<ul>
+<li><a id="signin" href="index.html">Sign In</a></li>
+<li><a class="link" href="index.html">Images</a></li>
+<li><a class="link"href="index.html">Mail</a></li>
+</ul>
+</div>
+
+<div id="wrapper">
+
+<div id="image">
+  <img src="inkbloteye.jpeg" alt="inkbloteye" width="300px" height="200px">
+</div>
+
+<div id="search">
+  <form action="index.html" method="GET">
+  <input type="search" size="35"</input>
+  <br>
+  <input type="submit" value="Search..." class="submit"></input>
+  <input type="submit" value="I'm Feeling Unlucky" class="submit"></input>
+</div>
+
+</div>
+
+
+  </body>
+
+<div id=langbar>
+  <br><br><br>
+  <p> Available In;</p>
+  <br>
+  <ul>
+  <li><a href="index.html">English</a></li>
+  <li><a  href="index.html">Deutsch</a></li>
+  <li><a href="index.html">Francais</a></li>
+  </ul>
+</div>
+
+<div class="footer">
+
+
+  <ul id="left">
+  <li><a href="index.html">Advertising</a></li>
+  <li><a href="index.html">Business</li>
+  <li><a href="index.html">About</a></li>
+  </ul>
+
+
+  <ul id="right">
+  <li><a href="index.html">Privacy</a></li>
+  <li><a href="index.html">Terms</a></li>
+  <li><a href="index.html">Settings</a></li>
+  </ul>
+
+</div>
+
+</div>
+
+</html>
