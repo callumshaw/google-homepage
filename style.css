@@ -1,25 +1,69 @@
 
-body {
- font-family: sans-serif;
- }
+/*body, html {
+  width:100%;
+  height:100%;
+  font-size: 1em;
+  font-family: arial,sans-serif;
+ }*/
 
  #outerwrapper {
-   width: 1080px;
+   width: 100%;
+   height: 100%;
    margin-left: auto;
    margin-right: auto;
  }
 
+ #navbar ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0px;
+ }
+
+ #navbar li a {
+   display: block;
+   width: 100px;
+   float: right;
+   margin-left: 10px;
+   font-weight: bold;
+ }
+
+ #navbar #signin {
+   background-color: #4486F8;
+   border-radius: 2px;
+   color: white;
+   padding: 10px;
+   text-decoration: none;
+ }
+
+ #navbar #signin:hover {
+   box-shadow: 2px 2px 2px 2px grey;
+ }
+
+ #navbar .link:hover {
+   box-shadow: 2px 2px 2px 2px grey;
+ }
+
+ #navbar .link {
+   color: black;
+   padding: 10px;
+   text-decoration: none;
+ }
+
+
 div#wrapper {
-  text-align:center;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
   padding-top: 150px;
   clear: both;
   position: relative;
+  z-index: 300;
 /*  top: 50%;
   transform: translateY(50%);*/
 }
 
 div#image {
-  display: block;
 }
 
 div#search {
@@ -28,17 +72,20 @@ div#search {
   margin: 0 auto;
   display: flex;
   justify-content: center;*/
-  display: inline-block;
+  height: 300px;
+  z-index: 200;
 }
 
 input[type="search"]{
   border-radius: 0;
   background-color: white;
-  display: block;
+  display: inline-block;
   border: 1px solid grey;
+  margin-bottom: 10px;
 }
 
 input[type="submit"]{
+  margin-left: 20px;
   border-radius: 0;
   color: #664C4C;
   background-color: #F3F3F3;
@@ -46,6 +93,7 @@ input[type="submit"]{
   font: inherit;
   box-shadow: none;
   border: 1px solid grey;
+  z-index: 200;
 
 }
 
@@ -55,50 +103,10 @@ input[type="submit"]:hover{
   box-shadow: 2px 2px 2px 2px grey;
 }
 
-#navbar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0px;
-}
-
-#navbar li a {
-  display: block;
-  width: 100px;
-  float: right;
-  margin-left: 10px;
-  font-weight: bold;
-
-
-}
-
-#navbar #signin {
-  background-color: #4486F8;
-  border-radius: 2px;
-  color: white;
-  padding: 10px;
-  text-decoration: none;
-
-}
-
-#navbar #signin:hover {
-  box-shadow: 2px 2px 2px 2px grey;
-}
-
-#navbar .link:hover {
-  box-shadow: 2px 2px 2px 2px grey;
-}
-
-#navbar .link {
-  color: black;
-  padding: 10px;
-  text-decoration: none;
-}
-
-
 #langbar {
-  color: grey;
-  padding-left: 275px;
-
+  z-index: 200;
+  display: block;
+  margin-left: 200px;
 }
 
 /*#langbar a:hover {
@@ -137,22 +145,19 @@ input[type="submit"]:hover{
 
 .footerwrapper {
   position: fixed;
-  left: 0;
   bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
+  left: 0;
   width: 100%;
-  height: 50px;
+  height: 8.5%;
   background: #F2F2F2;
+  z-index: 10;
 }
 
 
 .footer {
-  position: fixed;
-  bottom: 0;
   overflow: visible;
+  min-width: 1080px;
   width: 100%;
-  height: 50px;
 }
 
 .footer ul {
@@ -175,12 +180,14 @@ input[type="submit"]:hover{
   box-sizing: border-box;
   width: 35%;
   float: left;
+  margin-left: 100px;
 }
 
 #right {
   box-sizing: border-box;
   width: 30%;
   float: right;
+  margin-right: 100px;
 }
 
 .footer a:hover {
