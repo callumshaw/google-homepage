@@ -1,203 +1,151 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
-/*body, html {
-  width:100%;
-  height:100%;
-  font-size: 1em;
-  font-family: arial,sans-serif;
- }*/
-
- #outerwrapper {
+.outerwrapper {
    width: 100%;
    height: 100%;
-   margin-left: auto;
-   margin-right: auto;
- }
+   position: absolute;
+   font-family: arial,sans-serif;
+}
 
- #navbar ul {
-   list-style-type: none;
-   margin: 0;
-   padding: 0px;
- }
+.innerwrapper {
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+  z-index: 0;
+}
 
- #navbar li a {
-   display: block;
-   width: 100px;
-   float: right;
-   margin-left: 10px;
-   font-weight: bold;
- }
-
- #navbar #signin {
-   background-color: #4486F8;
-   border-radius: 2px;
-   color: white;
-   padding: 10px;
-   text-decoration: none;
- }
-
- #navbar #signin:hover {
-   box-shadow: 2px 2px 2px 2px grey;
- }
-
- #navbar .link:hover {
-   box-shadow: 2px 2px 2px 2px grey;
- }
-
- #navbar .link {
-   color: black;
-   padding: 10px;
-   text-decoration: none;
- }
-
-
-div#wrapper {
-  display: block;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  padding-top: 150px;
-  clear: both;
+.nav {
   position: relative;
   z-index: 300;
-/*  top: 50%;
-  transform: translateY(50%);*/
+  width: 100%;
+  height: 150px;
+  min-width: 450px;
 }
 
-div#image {
+.nav ul {
+  float: right;
+  margin: 20px 20px;
 }
 
-div#search {
-  /*display: block;
-  width: 100px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;*/
-  height: 300px;
-  z-index: 200;
+.nav li {
+  float: left;
 }
 
-input[type="search"]{
-  border-radius: 0;
-  background-color: white;
-  display: inline-block;
-  border: 1px solid grey;
-  margin-bottom: 10px;
-}
-
-input[type="submit"]{
-  margin-left: 20px;
-  border-radius: 0;
-  color: #664C4C;
-  background-color: #F3F3F3;
-  font-size: 1.5em;
-  font: inherit;
-  box-shadow: none;
-  border: 1px solid grey;
-  z-index: 200;
-
-}
-
-input[type="submit"]:hover{
-  border: 0px;
-  border: 1px solid black;
-  box-shadow: 2px 2px 2px 2px grey;
-}
-
-#langbar {
-  z-index: 200;
+.nav li a {
   display: block;
-  margin-left: 200px;
-}
-
-/*#langbar a:hover {
+  text-align: center;
+  padding: 10px 12px;
   text-decoration: none;
-}
-
-#langbar a:link {
-  color: darkgrey;
-}
-
-#langbar a:visited {
-  color: darkgrey;
-}*/
-
-/*#langbar p {
-  width: 130px;
-  margin: 0 auto;
-}*/
-
-
-#langbar ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 500px;
-  margin: 0 auto;
+}
+
+a{
+ color: grey;
+}
+
+.signin a{
+ background-color:#4181EF;
+ border-radius: 3px;
+ color:white;
 }
 
 
-#langbar li a {
+.image {
+  position: relative;
+  display: block;
+  width: 300px;
+margin: 0 auto;
+background: white;
+z-index: 300;
+}
+
+.search {
+  position: relative;
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+  z-index: 300;
+}
+
+.lang {
+  position: relative;
+  margin: 0 auto;
+  width: 300px;
+  z-index: 300;
+  background: white;
+}
+
+
+.lang li {
   width: 100px;
   float: left;
   font-weight: bold;
   font-size: 0.5em;
+  padding: 20px 20px;
 }
 
-.footerwrapper {
+.footer {
   position: fixed;
   bottom: 0;
   left: 0;
+  display: block;
   width: 100%;
-  height: 8.5%;
+  overflow: hidden;
   background: #F2F2F2;
-  z-index: 10;
+  z-index: -1;
+}
+
+.left li {
+  float: left;
+  padding: 15px;
+}
+
+.left ul {
+  list-style-type:none;
+}
+
+.right li {
+  float: right;
+  padding: 15px;
 }
 
 
-.footer {
-  overflow: visible;
-  min-width: 1080px;
-  width: 100%;
+.right ul {
+  float: right;
+  list-style-type:none;
 }
 
-.footer ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.footer ul li {
-    float: left;
-    margin: 30px;
-}
-
-/*nav #footbar {
-  display: flex;
-  flex-direction: row;
-}*/
-
-#left {
+.left {
   box-sizing: border-box;
   width: 35%;
   float: left;
-  margin-left: 100px;
 }
 
-#right {
+.right {
   box-sizing: border-box;
-  width: 30%;
+  width: 35%;
   float: right;
-  margin-right: 100px;
 }
 
-.footer a:hover {
-  text-decoration: none;
-}
+input[type="submit"] {
+  height: 36px;
+line-height: 27px;
 
-.footer a:link {
-  color: grey;
-}
-
-.footer a:visited {
-  color: grey;
+background-color: #f2f2f2;
+border: 1px solid #f2f2f2;
+border-radius: 2px;
+color: #757575;
+cursor: default;
+font-family: arial,sans-serif;
+font-size: 13px;
+font-weight: bold;
+margin: 11px 4px;
+min-width: 54px;
+padding: 0 16px;
+text-align: center;
 }
